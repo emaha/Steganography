@@ -15,7 +15,7 @@ namespace Stg
             var imageData = GetImageData(bitmap);
 
             var payloadData = GetPayloadData(payloadFile);
-            payloadData = Crypto.Crypt(payloadData, "qwe", 1);
+            payloadData = Crypto.Crypt(payloadData, "{^q%w><Wq2YUqDU2aF[a)?+P,yN1>%p:", 1);
 
             int imageSize = imageData.Length;
             float bytesNeeded = payloadData.Length / density * 8;

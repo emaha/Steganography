@@ -11,7 +11,7 @@ namespace Stg
             var bitmapData = GetBitmapData(srcFile);
 
             byte[] extractedData = ExtractData(bitmapData, density);
-            extractedData = Crypto.Crypt(extractedData, "qwe", 1);
+            extractedData = Crypto.Crypt(extractedData, "{^q%w><Wq2YUqDU2aF[a)?+P,yN1>%p:", 1);
 
             SaveToFile(extractedData, outputFile);
         }
