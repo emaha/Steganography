@@ -41,8 +41,8 @@ namespace Stg
             else if (args[0] == "-u")
             {
                 var sourceFile = args[1];
-                var outputFile = args[3];
-                var density = int.Parse(args[4]);
+                var outputFile = args[2];
+                var density = int.Parse(args[3]);
 
                 if (density < 1 || density > 8)
                 {
